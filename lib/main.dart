@@ -24,9 +24,8 @@ class MyApp extends StatelessWidget {
 
   Widget buildRow() =>
       Row(
-      //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
+        children: [
         Expanded(child:
         Image.asset('images/Dart_Logo.jpg'),
         ),
