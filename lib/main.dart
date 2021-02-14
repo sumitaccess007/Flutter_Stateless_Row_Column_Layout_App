@@ -24,11 +24,20 @@ class MyApp extends StatelessWidget {
 
   Widget buildRow() =>
       Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Image.asset('images/pic1.jpg'),
-        Image.asset('images/pic2.jpg'),
-        Image.asset('images/pic3.jpg'),
+        Expanded(child:
+        Image.asset('images/Dart_Logo.jpg'),
+        ),
+        Expanded(
+          flex: 2,
+          child:
+        Image.asset('images/Python_Logo.jpg'),
+        ),
+       Expanded(child:
+        Image.asset('images/Flutter_Logo.jpg'),
+       ),
       ],
     );
 
